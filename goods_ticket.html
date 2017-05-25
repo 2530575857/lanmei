@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商城</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/master.css">
+	<link type="text/css" rel="stylesheet" media="all" href="styles/swiper.min.css">
+</head>
+<body>
+
+<main>
+	<div class="swiper-container pic-gallery">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide"><img src="images/big.jpg" /></li>
+			<li class="swiper-slide"><img src="images/big.jpg" /></li>
+			<li class="swiper-slide"><img src="images/big.jpg" /></li>
+		</ul>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<div class="main-layout" >
+		<div class="title-share d-public clearfix">
+			<h1 class="nowrap">巴南蓝莓园门票</h1>
+			<p class="fl"><span>￥</span ><i id="Unit_Price">199</i><i>/</i><span>张</span></p>
+			<em class="fr">包邮</em>
+		</div>
+		<div class="number d-public">
+			<h4>选择数量</h4>
+			<div class="arithmetic">
+				<i class="minus" id="reduce"></i>
+				<span class="num" id="Number">1</span>
+				<i class="plus" id="plus"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="com-details">
+		<h3 class="title-pub">商品详情</h3>
+		<p>一种是低灌木，矮脚野生，颗粒小，含丰富花青素；第二种是人工
+			培育蓝莓，能成长至 240cm 高，果实较大，果肉饱满，改善了野
+			生蓝莓的食用口感，增强了人体对花青素的吸收。全世界分布的越
+			橘属植物可达400余种，主产于美国又被称为美国蓝莓。我国野生
+			蓝莓主要产在长白山、大兴安岭和小兴安岭林区，且大部分在大兴
+			安岭地区。近几年来才成功进行人工驯化培植。我国对蓝莓的研究
+			始于20世纪80年代初，是由吉林农业大学小浆果研究所率先进入蓝
+			莓研究领域，并第一个建立了蓝莓产业化生产基地。</p>
+		<p>一种是低灌木，矮脚野生，颗粒小，含丰富花青素；第二种是人工
+			培育蓝莓，能成长至 240cm 高，果实较大，果肉饱满，改善了野
+			生蓝莓的食用口感，增强了人体对花青素的吸收。全世界分布的越
+			橘属植物可达400余种，主产于美国又被称为美国蓝莓。我国野生
+			蓝莓主要产在长白山、大兴安岭和小兴安岭林区，且大部分在大兴
+			安岭地区。近几年来才成功进行人工驯化培植。我国对蓝莓的研究
+			始于20世纪80年代初，是由吉林农业大学小浆果研究所率先进入蓝
+			莓研究领域，并第一个建立了蓝莓产业化生产基地。</p>
+	</div>
+
+	<footer class="com-flex">
+		<p><label>单价：</label><span>￥</span><span id="Total_price">50</span></p>
+		<a href="confirm_pay.html" class="btn" >立即购买</a>
+	</footer>
+</main>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/master.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: 2500,
+		autoplayDisableOnInteraction: false,
+		observer:true,//修改swiper自己或子元素时，自动初始化swiper
+		observeParents:true,//修改swiper的父元素时，自动初始化swiper
+	});
+
+</script>
+</body>
+</html>
+

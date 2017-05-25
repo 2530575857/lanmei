@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商城</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/master.css">
+</head>
+<body>
+
+<main>
+	<div class="address">
+		<div class="user-info bor-bottom">
+			<h3>张三</h3>
+			<span>18369542169</span>
+			<label>
+				<i></i>
+				<p>重庆 两江新区 重庆两江新区移动互联网产业园三号楼3楼 9-4</p>
+			</label>
+		</div>
+		<div class="user-eit clearfix">
+			<label><i class="bg-check"><input type="radio" value="1" checked="checked"></i>设为默认</label>
+			<div class="choice">
+				<a href="address_revise.html"><i></i>编辑</a>
+				<span><i></i>删除</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="add-to">
+		<a href="address_revise.html"><span>添加地址</span></a>
+	</div>
+
+</main>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/master.js"></script>
+<script>
+	$(function(){
+		$(".user-eit label").click(function(){
+			$(".user-eit label i").toggleClass("bg-check");
+		})
+	});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商城</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/master.css">
+</head>
+<body style="background:#f3f3f3;">
+
+<main>
+	<div class="datum-head wh-shadow">
+		<div class="datum-top clearfix" id="user_head">
+			<div class="datum-main fl clearfix">
+				<i class="fl"><img src="images/user-img.jpg"></i>
+				<div class="info fr">
+					<h3>张无忌</h3>
+					<span>电话：<span id="ago">18693298421</span></span>
+				</div>
+			</div>
+			<img src="images/r_arrow.png" class="right-arrow" />
+		</div>
+	</div>
+
+	<div id="user_Telephone" style="display:none">
+		<div class="user-list" id="Telephone">
+			<label>电话</label>
+			<input type="text" placeholder="输入你要修改的电话" id="userphone">
+			<span class="spa"></span>
+		</div>
+
+		<div class="keep">
+			<input type="button" value="保存电话">
+		</div>
+	</div>
+
+	<div class="main-btn">
+		<h3>我的订单<i class="right-arrow"></i></h3>
+		<div class="mian-nav clearfix">
+			<a href="order_total.html">
+				<label>
+					<i class="i1"></i>
+					<p>待付款</p>
+					<span>0</span>
+				</label>
+			</a>
+			<a href="#">
+				<label>
+					<i class="i2"></i>
+					<p>待使用</p>
+					<span>22</span>
+				</label>
+			</a>
+			<a href="#">
+				<label>
+					<i class="i3"></i>
+					<p>待发货</p>
+					<span>22</span>
+				</label>
+			</a>
+			<a href="#">
+				<label>
+					<i class="i4"></i>
+					<p>待收货</p>
+					<span>22</span>
+				</label>
+			</a>
+			<a href="#">
+				<label>
+					<i class="i5"></i>
+					<p>交易成功</p>
+					<span>22</span>
+				</label>
+			</a>
+		</div>
+	</div>
+
+	<div class="list-item">
+		<a href="address.html" class="mint-cell">
+			<div class="list-item-content">
+				<em class="icon-1"></em>
+				<span>地址管理</span>
+			</div>
+			<i class="right-arrow"></i>
+		</a>
+	</div>
+</main>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/master.js"></script>
+
+</body>
+</html>
